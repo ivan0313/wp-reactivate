@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   for (let i = 0; i < shortcode_containers.length; ++i) {
     const objectId = shortcode_containers[i].getAttribute('data-object-id');
-
-    ReactDOM.render(<Shortcode wpObject={window[objectId]} />, shortcode_containers[i]);
+    
+    ReactDOM.render(<Shortcode />, shortcode_containers[i]);
   }
 });

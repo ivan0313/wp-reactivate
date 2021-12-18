@@ -1,17 +1,18 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React, { useState } from 'react';
 
-export default class Shortcode extends Component {
-  render() {
-    return (
-      <div>
-        <h1>WP Reactivate Frontend</h1>
-        <p>Title: {this.props.wpObject.title}</p>
-      </div>
-    );
+const Shortcode = () => {
+  const [count, setCount] = useState(0);
+
+  const handleClick = () => {
+    setCount(prev => prev + 1);
   }
+
+  return (
+    <>
+      <div>Count: {count}</div>
+      <button onClick={handleClick}>Click Me</button>
+    </>
+  )
 }
 
-Shortcode.propTypes = {
-  wpObject: PropTypes.object
-};
+export default Shortcode;

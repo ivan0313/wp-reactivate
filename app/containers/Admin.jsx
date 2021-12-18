@@ -90,6 +90,7 @@ export default class Admin extends Component {
               type="text"
               value={this.state.exampleSetting}
               onChange={this.updateInput}
+              style={{ marginLeft: '10px' }}
             />
           </label>
 
@@ -97,12 +98,14 @@ export default class Admin extends Component {
             id="save"
             className="button button-primary"
             onClick={this.handleSave}
+            style={{ marginLeft: '10px' }}
           >Save</button>
 
           <button
             id="delete"
             className="button button-primary"
             onClick={this.handleDelete}
+            style={{ marginLeft: '10px' }}
           >Delete</button>
         </form>
       </div>
