@@ -1,12 +1,12 @@
 {
-  "name": "wp-reactivate",
-  "version": "1.0.2",
-  "description": "React boilerplate for WordPress plugins",
+  "name": "laidback-class-manage",
+  "version": "1.0.0",
+  "description": "Laidback Painting Class Management",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --watch --mode=development",
-    "prod": "webpack -p --config webpack.config.js --mode=production"
+    "prod": "webpack --mode=production"
   },
   "repository": {
     "type": "git",
